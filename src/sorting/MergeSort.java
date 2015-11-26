@@ -14,7 +14,7 @@ public class MergeSort {
 		ms.sort(inputArr);
 		for(int i:inputArr){
 			System.out.println(i);
-			System.out.print(" ");
+			//System.out.print(" ");
 		}
 	}
 
