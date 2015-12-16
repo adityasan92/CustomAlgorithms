@@ -10,7 +10,7 @@ public class uniqueCharacters {
 		String notUni = "abcdefa";
 		String abc = null; 
 		uniqueCharacters temp = new uniqueCharacters(); 
-		System.out.println(temp.uniqueDS(abc)); 
+		System.out.println(temp.isUnique(notUni)); 
 		
 
 	}
@@ -34,6 +34,27 @@ public class uniqueCharacters {
 				set.add(arr[i]); 
 			}
 			
+		}
+		return true; 
+		
+	}
+	
+	public boolean isUnique(String str){
+		
+		if(str == null)
+		{
+			return true; 
+		}
+		int checker; 
+		
+		for(int i =1; i<str.length();i++){
+			checker = i-1; 
+			while(checker >= 0){
+				if(str.charAt(i) == str.charAt(checker)){
+					return false; 
+				}
+				checker--; 
+			}
 		}
 		return true; 
 		
