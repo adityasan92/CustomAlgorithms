@@ -1,3 +1,5 @@
+import java.util.Stack;
+import java.io.InputStream;
 public class Graph {
     private static final String NEWLINE = System.getProperty("line.separator");
 
